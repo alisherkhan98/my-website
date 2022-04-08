@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My website</title>
+    <meta name="viewport" content="width=device-width initial, initial-scale=1.0, maximum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules\mdb-ui-kit\css\mdb.min.css">
+    <link rel="stylesheet" href="styles\style.css">
+
+  </head>
+  <body>
+
+
+  <!--Navbar-->
+  <nav class='navbar navbar-expand-md navbar-dark bg-dark fixed-top'>
+    <div class="lg-page-center container-md">
+      <!--Logo-->
+      <a href="#" class='navbar-brand'>&lt;Ali Sher Khan&gt;</a>
+      <!--Toggle Button-->
+      <button type="button" name="button" class='navbar-toggler'
+      data-bs-toggle='collapse' data-bs-target='#navmenu'
+      aria-controls='navmenu' aria-expanded='false' aria-label-='toggle
+      navigation'>
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--Menu items-->
+      <div class="collapse navbar-collapse" id='navmenu'>
+        <ul class='navbar-nav ms-auto mb-2 mb-md-0'>
+          <li class="nav-item" ><a class='nav-link' href="#aboutme" ><span class='navbar-span' data-bs-toggle='collapse' data-bs-target='.navbar-collapse.show'>About me</span></a></li>
+          <li class="nav-item" ><a class='nav-link' href="#skills"><span class='navbar-span' data-bs-toggle='collapse' data-bs-target='.navbar-collapse.show'>Skills</span></a></li>
+          <li class="nav-item" ><a class='nav-link' href="#mywork"><span class='navbar-span' data-bs-toggle='collapse' data-bs-target='.navbar-collapse.show'>My work</span></a></li>
+          <li class="nav-item" ><a class='nav-link' href="#contactme"><span class='navbar-span last-span' data-bs-toggle='collapse' data-bs-target='.navbar-collapse.show'>Contact me</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Nav end-->
+
+
+  <!--Carousel-->
+    <div id="aboutme" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval='2000' data-bs-pause='false'>
+
+    <!-- slides -->
+    <div class="carousel-inner lg-page-center">
+      <div class="img-col">
+          <img src="images\carousel-image.jpg" class="hover-shadow" alt="">
+      </div>
+      <!-- First slide -->
+      <div class="carousel-item first-slide active">
+          <div class="carousel-text-col">
+            <div class="carousel-text">
+              <h1 class='display-4'>Hi, I'm Ali </h1>
+              <h2 class='display-4'><span class='red-text'>&lt;Web Developer&gt;</span></h2>
+            </div>
+          </div>
+
+      </div>
+      <!-- Second slide -->
+      <div class="carousel-item second-slide">
+        <div class="carousel-text-col">
+          <div class="carousel-text">
+            <h1 class='display-4'>Hi, I'm Ali</h1>
+            <h2 class='display-4'><span class='green-text'>"Tech Addicted"</span></h2>
+          </div>
+        </div>
+
+      </div>
+      <!-- Third slide -->
+      <div class="carousel-item third-slide">
+        <div class="carousel-text-col">
+          <div class="carousel-text">
+            <h1 class='display-4'>Hi, I'm Ali</h1>
+            <h2 class='display-4'><span class='blue-text'>#Digital Enterpreneur</span></h2>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!--About me-->
+  <div class="aboutme" id='skills'>
+    <h1>Hi I'm <strong>Ali Sher Khan</strong></h1>
+  </div>
+  <div class="aboutme" id='mywork'>
+    <h1>Hi I'm <strong>Ali Sher Khan</strong></h1>
+  </div>
+  <div class="aboutme" id='contactme'>
+    <h1>Hi I'm <strong>Ali Sher Khan</strong></h1>
+  </div>
+
+
+
+
+
+  <script type="text/javascript" src='node_modules\bootstrap\dist\js\bootstrap.bundle.js'></script>
+
+  </body>
+</html>
