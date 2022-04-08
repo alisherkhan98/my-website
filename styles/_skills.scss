@@ -8,6 +8,11 @@
 .skills{
   display: flex;
   flex-direction: column;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+  background-color: $atom-bg;
   .section-heading{
     flex: 0 1 auto;
   }
@@ -86,4 +91,15 @@
 7%{opacity: 1;}
 14%{opacity: 0;}
 100%{opacity: 0;}
+}
+
+@media only screen and (min-width: "768px"){
+  .skills{
+    .skills-content{
+      flex-direction: row;
+      .skills-animation-col{
+        width:50% !important;
+      }
+    }
+  }
 }
