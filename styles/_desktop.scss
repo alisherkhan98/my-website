@@ -1,4 +1,15 @@
 
+@media only screen and (min-width: 576px){
+  .skills-learned, .skills-future{
+    .skills-text-col{
+      .skills-text{
+        font-size: 1.3rem;
+      }
+    }
+
+  }
+}
+
 @media only screen and (min-width: 768px){
   /*Navbar*/
   .navbar{
@@ -47,6 +58,48 @@
     }
   }
 
+  /*Skills*/
+  .skills{
+    .skills-learned{
+      flex-direction: row;
+      height: 70vh;
+      .skills-text-col{
+        .skills-text{
+          font-size: 1.3rem;
+        }
+      }
+      .skills-animation-col{
+        width:50%;
+        .skills-animation{
+          span{
+            font-size: calc(1.3rem + 0.6vw);
+          }
+        }
+      }
+    }
+
+    .skills-future{
+      flex-direction: row-reverse;
+      height: 70vh;
+      .skills-text-col{
+        .skills-text{
+          font-size: 1.3rem;
+        }
+      }
+      .skills-animation-col{
+        width:50%;
+        .skills-animation{
+          span{
+            font-size: calc(1.3rem + 0.6vw);
+          }
+        }
+      }
+    }
+  }
+
+
+
+
 }
 
 /*large screens*/
@@ -69,6 +122,16 @@
     margin:0 auto;
   }
 
+
+
+  /*Navbar*/
+  .navbar{
+    font-size: 1.2rem;
+    .navbar-brand{
+      font-size: 1.3rem;
+    }
+  }
+
   #aboutme{
     .display-3 {
         font-size: 3.5rem !important;
@@ -82,12 +145,17 @@
 
   }
 
-  /*Navbar*/
-  .navbar{
-    font-size: 1.2rem;
-    .navbar-brand{
-      font-size: 1.3rem;
+  /*Skills*/
+  .skills{
+      .skills-learned{
+        .skills-animation-col{
+          .skills-animation{
+            span{
+              font-size: 1.75rem;
+            }
+          }
+        }
+      }
     }
-  }
 
 }

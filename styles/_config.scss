@@ -11,9 +11,28 @@
   scroll-behavior: smooth;
 }
 body{
+  letter-spacing: 1px;
   font-size: 16px;
   font-family: Roboto Mono;
   font-weight: 400;
+  color: #fff;
+  background-color: $atom-bg;
+  .body-bg{
+    position: fixed;
+    z-index: -9999;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.02;
+  }
+  .red-text{
+    color: $atom-red;
+  }
+  .green-text{
+    color: $atom-green;
+  }
+  .blue-text{
+    color: $atom-blue;
+  }
 }
 
 img{
