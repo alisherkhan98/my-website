@@ -7,10 +7,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="node_modules\mdb-ui-kit\css\mdb.min.css">
     <link rel="stylesheet" href="styles\style.css">
+    <script src="https://kit.fontawesome.com/49aa9e056c.js" crossorigin="anonymous"></script>
 
   </head>
   <body>
-  <img src="images\circuit-board_1920.png" alt="" class='body-bg'>
+  <!-- <img src="images\circuit-board_1920.png" alt="" class='body-bg'> -->
 
   <!--Navbar-->
   <nav class='navbar navbar-expand-md navbar-dark bg-dark fixed-top'>
@@ -18,11 +19,17 @@
       <!--Logo-->
       <a href="#" class='navbar-brand'>&lt;Ali Sher Khan&gt;</a>
       <!--Toggle Button-->
-      <button type="button" name="button" class='navbar-toggler'
-      data-bs-toggle='collapse' data-bs-target='#navmenu'
-      aria-controls='navmenu' aria-expanded='false' aria-label-='toggle
+      <!-- <button type="button" name="button" class='navbar-toggler'
+      data-mdb-toggle='collapse' data-mdb-target='#navmenu'
+      aria-controls='navmenu' aria-expanded='false' aria-label='toggle
       navigation'>
       <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <button class="navbar-toggler collapsed" type="button"
+      data-mdb-toggle="collapse" data-mdb-target="#navmenu"
+      aria-controls="navmenu" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <i class="fa-solid fa-user"></i>
       </button>
       <!--Menu items-->
       <div class="collapse navbar-collapse" id='navmenu'>
@@ -37,14 +44,17 @@
   </nav>
   <!--Nav end-->
 
+  <div class="social-md">
+
+  </div>
 
   <!--Carousel-->
-    <div id="aboutme" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval='2000' data-bs-pause='false'>
+  <header id="aboutme" class="aboutme carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval='2000' data-bs-pause='false'>
       <img src="images\keyboard.jpg" alt="" class="carousel-bg">
     <!-- slides -->
     <div class="carousel-inner lg-page-center">
       <div class="img-col">
-          <img src="images\carousel-image.jpg" class="hover-shadow" alt="">
+          <img src="images\carousel-image.jpg" class="" alt="">
       </div>
       <!-- First slide -->
       <div class="carousel-item first-slide active">
@@ -79,13 +89,14 @@
 
     </div>
 
-  </div>
+  </header>
+  <!-- Carousel End -->
 
   <!--Skills-->
-  <div class="skills " id='skills'>
-    <div class="skills-learned lg-page-center">
+  <section id='skills' class="skills lg-page-center">
+    <div class="skills-learned">
       <div class="skills-text-col col-md-6">
-        <p class=" skills-text">My journey in web developing just recently
+        <p class=" skills-text p-text">My journey in web developing just recently
         started, so here are some of the &lt;<span class="red-text">skills</span>&gt; I have acquired</p>
       </div>
       <div class="skills-animation-col col-md-6">
@@ -107,9 +118,11 @@
       </div>
     </div>
 
-    <div class="skills-future lg-page-center">
+    <span class="p-text and">and...</span>
+
+    <div class="skills-future">
       <div class="skills-text-col col-md-6">
-        <p class=" skills-text">And I'll add some more to my <span class="green-text">"portfolio"</span> soon</p>
+        <p class=" skills-text p-text">...I'll add some more to my <span class="green-text">"portfolio"</span> soon</p>
       </div>
       <div class="skills-animation-col col-md-6">
         <div class="skills-animation">
@@ -129,15 +142,82 @@
         </div>
       </div>
     </div>
+  </section>
+  <!-- Skills End -->
+  <hr>
+  <!-- My Work -->
+  <section id="mywork" class="mywork d-flex lg-page-center">
+    <p class="mywork-text p-text">Check out some examples of .<span class="orange-text">mywork</span></p>
 
-  </div>
+    <div class="work-container">
+      <div class="mywork-img bg-image hover-overlay">
+        <a href="#mywork">
+          <img src="images\blog-img.jpg" class="my-work--img"alt="">
+          <div class="mask">
+            <span class="display-6">Blog</span>
+          </div>
+        </a>
+      </div>
+      <div class="mywork-img bg-image hover-overlay">
+        <a href="#mywork">
+          <img src="images\app-img.png" class="my-work--img"alt="">
+          <div class="mask">
+            <span class="display-6">App</span>
+          </div>
+        </a>
+      </div>
+    </div>
 
+  </section>
+  <!-- My Work End -->
+<hr>
+<!-- Contact me -->
+<section id="contactme" class="contactme lg-page-center">
+  <p class="contactme-text p-text mb-5">If you want to get in touch @<span class="purple-text">ContactMe!</span></p>
+  <!-- Form -->
+  <form class="contactme-form row mb-5" target="_blank" method="post">
+    <div class="col-md-6">
+      <div class="form-outline form-white mb-3">
+        <input type="text" id="fullname" class="form-control" name="Full name"/>
+        <label class="form-label" for="fullname">Name</label>
+      </div>
+      <div class="form-outline form-white mb-3">
+        <input type="email" id="email" class="form-control" name="email"/>
+        <label class="form-label" for="email">Email</label>
+      </div>
+      <div class="form-outline form-white mb-3">
+        <input type="number" id="telephone" class="form-control" name="telephone"/>
+        <label class="form-label" for="telephone">Telephone</label>
+      </div>
+
+    </div>
+
+    <div class="col-md-6">
+      <div class="form-outline form-white mb-5">
+        <textarea class="form-control" name="message" id="message" rows="5"></textarea>
+        <label class="form-label" for="message">Message</label>
+      </div>
+    </div>
+
+
+    <input type="submit" class="btn btn-outline-secondary btn-rounded w-50" value="Send">
+
+  </form>
+
+  <!-- Button trigger modal -->
+
+
+
+</section>
 
 
 
 
 
   <script type="text/javascript" src='node_modules\bootstrap\dist\js\bootstrap.bundle.js'></script>
+  <script type="text/javascript" src="node_modules\mdb-ui-kit\js\mdb.min.js">
+
+  </script>
 
   </body>
 </html>

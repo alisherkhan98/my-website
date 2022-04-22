@@ -1,12 +1,14 @@
 @import 'myvariables';
-@import "../node_modules/bootstrap/scss/bootstrap";
 @import 'config';
 
-
+hr{
+  width: 90%;
+  margin-left: auto;
+  display: none;
+}
 /*Navbar*/
 nav{
 
-    background-color: red !important;
     /*Logo*/
     .navbar-brand{
       font-weight: 500;
@@ -45,13 +47,10 @@ nav{
 
 /*Carousel*/
 
-#aboutme{
-  background-color: $atom-bg;
-  // background-image: url(../images/Untitled.jpg);
-  background-size: cover;
-  background-blend-mode: color-burn;
+.aboutme{
   .carousel-bg{
     position: absolute;
+    width: 100%;
     height: 100vh;
     object-fit: cover;
     opacity: 0.1;
@@ -72,6 +71,7 @@ nav{
       height: 50vh;
       max-height: 500px;
       box-shadow: 0 0 20px rgba(0,0,0,.61);
+      transition: .5s ease-in-out;
       &:hover{
         box-shadow:  0 0 20px rgba(0,0,0,.61), 5px 5px 10px rgba(0,0,0,.5);
         transform: scale(1.1);
@@ -107,7 +107,7 @@ nav{
 
   }
 }
-
+/*Carousel End*/
 
 /*Skills*/
 
@@ -115,7 +115,8 @@ nav{
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
 
   .skills-learned{
     height: 70vh;
@@ -125,13 +126,11 @@ nav{
     align-items: center;
 
     .skills-text{
-      width: 80%;
-      margin: 0 auto;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 4rem;
 
-    }
-    .skills-text::after{
-      content: "\2588";
-      animation: cursor 1s infinite;
     }
 
     .skills-animation-col{
@@ -149,7 +148,7 @@ nav{
             animation: skillopacity 7s ease-in-out infinite both;
             font-size: calc(1.275rem + 0.3vw);
             font-weight: 500;
-            text-shadow: 0 0 20px  rgba(0,136,204 ,.8), 0 0 10px  rgba(102, 47, 143 ,.8);
+            text-shadow: 0 0 20px  rgba(0,136,204 ,.9), 0 0 10px  rgba(102, 47, 143 ,.9);
         }
 
         .node{
@@ -183,6 +182,12 @@ nav{
 
   }
 
+  .and{
+    width: 100%;
+    text-align: center;
+    margin: 60px 0;
+  }
+
   .skills-future{
     height: 70vh;
     display: flex;
@@ -191,7 +196,7 @@ nav{
     align-items: center;
 
     .skills-text{
-      width: 80%;
+      width: 100%;
       margin: 0 auto;
 
     }
@@ -212,11 +217,11 @@ nav{
         flex-direction: column;
         justify-content: space-around;
         span{
-            animation: skillopacity 7s ease infinite both;
+            animation: skillopacity 7s ease-in-out infinite both;
             font-size: calc(1.275rem + 0.3vw);
             font-weight: 500;
-            text-shadow: 0 0 20px  rgba(0,136,204 ,.8), 0 0 10px  rgba(102, 47, 143 ,.8);
-        }
+            text-shadow: 0 0 20px  rgba(0,136,204 ,.9), 0 0 10px  rgba(102, 47, 143 ,.9);
+          }
         .wordpress{
           animation-delay: 500ms;
         }
@@ -252,7 +257,82 @@ nav{
   }
 
 }
+/*Skills End*/
 
+/*My work*/
+.mywork{
+  padding-top: 3rem;
+  width: 80%;
+  margin:0 auto;
+  height: 100vh;
+  flex-direction: column;
+
+  .mywork-text{
+    margin-top:3rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .work-container{
+    // height: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .mywork-img{
+      height: 25%;
+      border-radius: 1rem;
+      margin-top: 3rem;
+      transition: 1s ease;
+      box-shadow: 0 5px 10px rgba(0,0,0,.5);
+      &:hover{
+        transform: scale(1.1);
+        box-shadow:  0px 10px 20px 5px rgba(0,0,0,.5);
+
+      }
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius:1em;
+
+      }
+      .mask{
+        background-image: linear-gradient(45deg, rgba(darken($primary-color,10%),0.6),rgba(darken($secondary-color,10%),0.6));
+        span{
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-50%);
+          color: white;
+          font-weight: 500;
+          }
+        }
+      }
+
+  }
+
+}
+/*My work End*/
+/*Contact me*/
+.contactme{
+  min-height: 100vh;
+  width: 80%;
+  margin:0 auto;
+  padding-top: 3rem;
+  .contactme-text{
+    width: 100%;
+    text-align: center;
+    margin-top:3rem;
+  }
+  .contactme-form{
+    flex-wrap: wrap;
+    justify-content: center;
+    .form-control:focus{
+      background-color: transparent;
+    }
+  }
+
+}
 
 @keyframes cursor {
   0%{opacity: 0}

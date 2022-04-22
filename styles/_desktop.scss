@@ -1,16 +1,27 @@
 
 @media only screen and (min-width: 576px){
-  .skills-learned, .skills-future{
-    .skills-text-col{
-      .skills-text{
-        font-size: 1.3rem;
+  .mywork{
+    height: 70vh;
+    .mywork-text{
+      top:15%;
+    }
+    .work-container{
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      .mywork-img{
+        width: 33%;
+        height:33%;
       }
     }
-
   }
 }
 
 @media only screen and (min-width: 768px){
+  /*Divider*/
+  hr{
+    display: block;
+  }
   /*Navbar*/
   .navbar{
 
@@ -34,7 +45,7 @@
   }
 
   /*Carousel*/
-  #aboutme{
+  .aboutme{
 
     .carousel-text-col{
       right: 50% !important;
@@ -62,12 +73,8 @@
   .skills{
     .skills-learned{
       flex-direction: row;
-      height: 70vh;
-      .skills-text-col{
-        .skills-text{
-          font-size: 1.3rem;
-        }
-      }
+      height: calc((3/4)*100vw);
+      max-height: 100vh;
       .skills-animation-col{
         width:50%;
         .skills-animation{
@@ -78,14 +85,14 @@
       }
     }
 
+    .and{
+      margin:0;
+    }
     .skills-future{
       flex-direction: row-reverse;
-      height: 70vh;
-      .skills-text-col{
-        .skills-text{
-          font-size: 1.3rem;
-        }
-      }
+      // height: 100vh;
+      height: calc((3/4)*100vw);
+      max-height: 100vh;
       .skills-animation-col{
         width:50%;
         .skills-animation{
@@ -97,7 +104,32 @@
     }
   }
 
+/*My work*/
+.mywork{
+  height: calc((3/4)*100vw);
+  max-height: 100vh;
 
+  .mywork-text{
+    top:15%;
+  }
+  .work-container{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    .mywork-img{
+      width: 33%;
+      height:33%;
+    }
+  }
+}
+
+/*Contact Me*/
+.contactme{
+  height: calc((3/4)*100vw);
+  max-height: 100vh;
+  .contactme-text{
+  }
+}
 
 
 }

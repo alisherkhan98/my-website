@@ -1,14 +1,20 @@
 $primary-color: #59c7ff;
 $secondary-color: #b552ff;
-$atom-bg: #32343f;
+$atom-bg: #272b34;
 $atom-red: #b85d61;
-$atom-orange: #b48354;
+$atom-orange: #e0a66d;
 $atom-green:#88a75c;
 $atom-blue:#71C7EC;
-$light-white:rgba(255,255,255,.8);
+$atom-purple:rgb(157,103,178);
+$light-white:#f7f7f7;
+
 /*Nav bar settings*/
 $navbar-dark-color: $light-white;
 $navbar-dark-hover-color: $primary-color;
 $navbar-dark-active-color: $primary-color;
 $navbar-toggler-font-size:  1rem;
 $btn-focus-width: 0;
+
+/*Forms*/
+$form-label-color: $light-white;
+$input-bg: $light-white;
