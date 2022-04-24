@@ -58,12 +58,6 @@ body .purple-text {
   color: #9d67b2;
 }
 
-@media only screen and (min-width: 576px) {
-  body .p-text {
-    font-size: 1.3rem;
-  }
-}
-
 .carousel-item {
   transition: transform  0.6s ease-in-out;
 }
@@ -227,7 +221,7 @@ nav .nav-item .nav-link .navbar-span {
   animation: skillopacity 7s ease-in-out infinite both;
   font-size: calc(1.275rem + 0.3vw);
   font-weight: 500;
-  text-shadow: 0 0 20px rgba(0, 136, 204, 0.9), 0 0 10px rgba(102, 47, 143, 0.9);
+  text-shadow: 0 0 10px #b552ff;
 }
 
 .skills .skills-learned .skills-animation-col .skills-animation .node {
@@ -304,7 +298,7 @@ nav .nav-item .nav-link .navbar-span {
   animation: skillopacity 7s ease-in-out infinite both;
   font-size: calc(1.275rem + 0.3vw);
   font-weight: 500;
-  text-shadow: 0 0 20px rgba(0, 136, 204, 0.9), 0 0 10px rgba(102, 47, 143, 0.9);
+  text-shadow: 0 0 10px #b552ff;
 }
 
 .skills .skills-future .skills-animation-col .skills-animation .wordpress {
@@ -345,62 +339,48 @@ nav .nav-item .nav-link .navbar-span {
 /*Skills End*/
 /*My work*/
 .mywork {
-  padding-top: 3rem;
   width: 80%;
   margin: 0 auto;
-  height: 100vh;
-  flex-direction: column;
+  padding-top: 3rem;
+  position: relative;
 }
 
 .mywork .mywork-text {
-  margin-top: 3rem;
   width: 100%;
   text-align: center;
+  margin-top: 2rem;
 }
 
-.mywork .work-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.mywork .vertical-container-center .work-container {
+  padding: 4rem 0;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.mywork .work-container .mywork-img {
-  height: 25%;
-  border-radius: 1rem;
-  margin-top: 3rem;
-  transition: 1s ease;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+.mywork .vertical-container-center .work-container .mywork-col {
+  height: 30vh;
+  max-height: 80vw;
+  padding: 2rem;
 }
 
-.mywork .work-container .mywork-img:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
-}
-
-.mywork .work-container .mywork-img img {
-  height: 100%;
+.mywork .vertical-container-center .work-container .mywork-col img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 1em;
+  border-radius: 1rem;
+  opacity: 0.7;
+  transition: .2s ease-in-out;
+  filter: hue-rotate(60deg);
 }
 
-.mywork .work-container .mywork-img .mask {
-  background-image: linear-gradient(45deg, rgba(38, 182, 255, 0.6), rgba(159, 31, 255, 0.6));
-}
-
-.mywork .work-container .mywork-img .mask span {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-weight: 500;
+.mywork .vertical-container-center .work-container .mywork-col img:hover {
+  opacity: 1;
 }
 
 /*My work End*/
 /*Contact me*/
 .contactme {
-  min-height: 100vh;
   width: 80%;
   margin: 0 auto;
   padding-top: 3rem;
@@ -409,7 +389,7 @@ nav .nav-item .nav-link .navbar-span {
 .contactme .contactme-text {
   width: 100%;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .contactme .contactme-form {
@@ -419,6 +399,34 @@ nav .nav-item .nav-link .navbar-span {
 
 .contactme .contactme-form .form-control:focus {
   background-color: transparent;
+}
+
+.contactme .contactme-form .btn {
+  color: #b552ff;
+  border-color: #b552ff;
+}
+
+.contactme .follow {
+  text-align: center;
+}
+
+.contactme .socials {
+  font-size: 1rem;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+
+.contactme .socials a:link, .contactme .socials a:visited {
+  color: rgba(247, 247, 247, 0.7);
+}
+
+.contactme .socials a:hover {
+  color: #f7f7f7;
+}
+
+.socials-md-fixed {
+  display: none;
 }
 
 @keyframes cursor {
@@ -448,24 +456,6 @@ nav .nav-item .nav-link .navbar-span {
   }
   100% {
     opacity: 0;
-  }
-}
-
-@media only screen and (min-width: 576px) {
-  .mywork {
-    height: 70vh;
-  }
-  .mywork .mywork-text {
-    top: 15%;
-  }
-  .mywork .work-container {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  .mywork .work-container .mywork-img {
-    width: 33%;
-    height: 33%;
   }
 }
 
@@ -539,48 +529,71 @@ nav .nav-item .nav-link .navbar-span {
     max-height: 100vh;
   }
   .mywork .mywork-text {
-    top: 15%;
+    margin-top: 3rem;
   }
-  .mywork .work-container {
-    flex-direction: row;
+  .mywork .vertical-container-center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
   }
-  .mywork .work-container .mywork-img {
-    width: 33%;
-    height: 33%;
+  .mywork .vertical-container-center .work-container {
+    width: 100%;
+  }
+  .mywork .vertical-container-center .work-container .mywork-col {
+    height: 40vw;
+    max-height: 40vh;
   }
   /*Contact Me*/
   .contactme {
     height: calc((3/4)*100vw);
     max-height: 100vh;
+    position: relative;
+  }
+  .contactme .contactme-text {
+    margin-top: 3rem;
+  }
+  .contactme .contactme-form {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .contactme .socials {
+    display: none !important;
+  }
+  /*Fixed socials*/
+  .socials-md-fixed {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  .socials-md-fixed a:link, .socials-md-fixed a:visited {
+    color: rgba(247, 247, 247, 0.7);
+  }
+  .socials-md-fixed a:hover {
+    color: #f7f7f7;
+  }
+  .socials-md-fixed .line {
+    height: 90px;
+    border-left: 1px solid #f7f7f7;
+    box-shadow: 0 0 5px #b552ff;
   }
 }
 
 /*large screens*/
-@media only screen and (min-width: 992px) {
-  /*Navbar*/
-  .navbar {
-    font-size: 1.1rem;
-  }
-  .navbar .navbar-brand {
-    font-size: 1.2rem;
-  }
-}
-
-/*Carousel*/
 /*Extra Large Screens*/
 @media only screen and (min-width: 1200px) {
   .lg-page-center {
     width: 960px;
     margin: 0 auto;
-  }
-  /*Navbar*/
-  .navbar {
-    font-size: 1.2rem;
-  }
-  .navbar .navbar-brand {
-    font-size: 1.3rem;
   }
   #aboutme .display-3 {
     font-size: 3.5rem !important;

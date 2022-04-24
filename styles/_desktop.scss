@@ -1,20 +1,15 @@
 
 @media only screen and (min-width: 576px){
   .mywork{
-    height: 70vh;
+
     .mywork-text{
-      top:15%;
+
     }
     .work-container{
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-evenly;
-      .mywork-img{
-        width: 33%;
-        height:33%;
+
       }
     }
-  }
+
 }
 
 @media only screen and (min-width: 768px){
@@ -110,15 +105,23 @@
   max-height: 100vh;
 
   .mywork-text{
-    top:15%;
+    margin-top: 3rem;
   }
-  .work-container{
-    flex-direction: row;
+  .vertical-container-center{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    .mywork-img{
-      width: 33%;
-      height:33%;
+    justify-content: center;
+    .work-container{
+      width: 100%;
+      .mywork-col{
+        height: 40vw;
+        max-height: 40vh;
+      }
     }
   }
 }
@@ -127,25 +130,51 @@
 .contactme{
   height: calc((3/4)*100vw);
   max-height: 100vh;
+  position: relative;
   .contactme-text{
+    margin-top: 3rem;
+  }
+  .contactme-form{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .socials{
+    display: none !important;
   }
 }
+/*Fixed socials*/
+.socials-md-fixed{
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  a{
+    &:link,
+    &:visited{
+      color: rgba($light-white,.7);
+    }
+    &:hover{
+      color: $light-white;
+    }
+  }
+  .line{
+    height: 90px;
+    border-left: 1px solid $light-white;
+    box-shadow: 0 0 5px #b552ff;
 
+  }
+}
 
 }
 
 /*large screens*/
 @media only screen and (min-width: 992px){
-/*Navbar*/
-  .navbar{
-    font-size: 1.1rem;
-    .navbar-brand{
-      font-size: 1.2rem;
-    }
-  }
-}
-  /*Carousel*/
 
+}
 
 /*Extra Large Screens*/
 @media only screen and (min-width: 1200px){
@@ -156,13 +185,7 @@
 
 
 
-  /*Navbar*/
-  .navbar{
-    font-size: 1.2rem;
-    .navbar-brand{
-      font-size: 1.3rem;
-    }
-  }
+
 
   #aboutme{
     .display-3 {

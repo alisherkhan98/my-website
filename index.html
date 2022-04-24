@@ -29,7 +29,7 @@
       data-mdb-toggle="collapse" data-mdb-target="#navmenu"
       aria-controls="navmenu" aria-expanded="false"
       aria-label="Toggle navigation">
-      <i class="fa-solid fa-user"></i>
+      <i class="fa-solid fa-bars"></i>
       </button>
       <!--Menu items-->
       <div class="collapse navbar-collapse" id='navmenu'>
@@ -44,13 +44,9 @@
   </nav>
   <!--Nav end-->
 
-  <div class="social-md">
-
-  </div>
-
   <!--Carousel-->
   <header id="aboutme" class="aboutme carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval='2000' data-bs-pause='false'>
-      <img src="images\keyboard.jpg" alt="" class="carousel-bg">
+      <!-- <img src="images\keyboard.jpg" alt="" class="carousel-bg"> -->
     <!-- slides -->
     <div class="carousel-inner lg-page-center">
       <div class="img-col">
@@ -118,7 +114,7 @@
       </div>
     </div>
 
-    <span class="p-text and">and...</span>
+    <!-- <span class="p-text and">and...</span> -->
 
     <div class="skills-future">
       <div class="skills-text-col col-md-6">
@@ -146,25 +142,23 @@
   <!-- Skills End -->
   <hr>
   <!-- My Work -->
-  <section id="mywork" class="mywork d-flex lg-page-center">
+  <section id="mywork" class="mywork lg-page-center">
     <p class="mywork-text p-text">Check out some examples of .<span class="orange-text">mywork</span></p>
 
-    <div class="work-container">
-      <div class="mywork-img bg-image hover-overlay">
-        <a href="#mywork">
-          <img src="images\blog-img.jpg" class="my-work--img"alt="">
-          <div class="mask">
-            <span class="display-6">Blog</span>
-          </div>
-        </a>
-      </div>
-      <div class="mywork-img bg-image hover-overlay">
-        <a href="#mywork">
-          <img src="images\app-img.png" class="my-work--img"alt="">
-          <div class="mask">
-            <span class="display-6">App</span>
-          </div>
-        </a>
+    <div class="vertical-container-center">
+      <div class="work-container d-flex">
+        <!-- Imgage one -->
+        <div class="mywork-col col-12 col-md-6">
+            <a href="#mywork" class="mywork-link">
+              <img src="images\blog-img.jpg" alt="">
+            </a>
+        </div>
+        <!-- Image two -->
+        <div class="mywork-col col-12 col-md-6">
+            <a href="#mywork" class="mywork-link">
+              <img src="images\app-img.png" alt="">
+            </a>
+        </div>
       </div>
     </div>
 
@@ -175,7 +169,7 @@
 <section id="contactme" class="contactme lg-page-center">
   <p class="contactme-text p-text mb-5">If you want to get in touch @<span class="purple-text">ContactMe!</span></p>
   <!-- Form -->
-  <form class="contactme-form row mb-5" target="_blank" method="post">
+  <form class="contactme-form row pb-5 pt-5" target="_blank" method="post">
     <div class="col-md-6">
       <div class="form-outline form-white mb-3">
         <input type="text" id="fullname" class="form-control" name="Full name"/>
@@ -204,12 +198,29 @@
 
   </form>
 
-  <!-- Button trigger modal -->
+  <p class="p-text follow mt-5">Follow me on my socials</p>
+
+  <div class="socials d-flex">
+    <a href="https://www.instagram.com/" class="mb-5 mt-3 p-2"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://github.com/" class="mb-5 mt-3 p-2"><i class="fa-brands fa-github"></i></a>
+    <a href="https://it.linkedin.com/" class="mb-5 mt-3 p-2"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="https://www.tiktok.com/" class="mb-5 mt-3 p-2"><i class="fa-brands fa-tiktok"></i></a>
+  </div>
+
 
 
 
 </section>
 
+<section class="socials-md-fixed">
+  <a href="https://www.instagram.com/" class="p-2"><i class="fa-brands fa-instagram"></i></a>
+  <a href="https://github.com/" class="p-2"><i class="fa-brands fa-github"></i></a>
+  <a href="https://it.linkedin.com/" class="p-2"><i class="fa-brands fa-linkedin-in"></i></a>
+  <a href="https://www.tiktok.com/" class="p-2"><i class="fa-brands fa-tiktok"></i></a>
+  <div class="line">
+
+  </div>
+</section>
 
 
 
