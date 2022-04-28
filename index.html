@@ -14,17 +14,11 @@
   <!-- <img src="images\circuit-board_1920.png" alt="" class='body-bg'> -->
 
   <!--Navbar-->
-  <nav class='navbar navbar-expand-md navbar-dark bg-dark fixed-top'>
+  <nav class='navbar navbar-expand-md navbar-dark fixed-top'>
     <div class="lg-page-center container-md">
       <!--Logo-->
       <a href="#" class='navbar-brand'>&lt;Ali Sher Khan&gt;</a>
       <!--Toggle Button-->
-      <!-- <button type="button" name="button" class='navbar-toggler'
-      data-mdb-toggle='collapse' data-mdb-target='#navmenu'
-      aria-controls='navmenu' aria-expanded='false' aria-label='toggle
-      navigation'>
-      <span class="navbar-toggler-icon"></span>
-      </button> -->
       <button class="navbar-toggler collapsed" type="button"
       data-mdb-toggle="collapse" data-mdb-target="#navmenu"
       aria-controls="navmenu" aria-expanded="false"
@@ -46,7 +40,7 @@
 
   <!--Carousel-->
   <header id="aboutme" class="aboutme carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval='2000' data-bs-pause='false'>
-      <!-- <img src="images\keyboard.jpg" alt="" class="carousel-bg"> -->
+      <img src="images\keyboard.jpg" alt="" class="carousel-bg">
     <!-- slides -->
     <div class="carousel-inner lg-page-center">
       <div class="img-col">
@@ -90,7 +84,7 @@
 
   <!--Skills-->
   <section id='skills' class="skills lg-page-center">
-    <div class="skills-learned">
+    <div class="skills-learned atom-tab ">
       <div class="skills-text-col col-md-6">
         <p class=" skills-text p-text">My journey in web developing just recently
         started, so here are some of the &lt;<span class="red-text">skills</span>&gt; I have acquired</p>
@@ -114,11 +108,9 @@
       </div>
     </div>
 
-    <!-- <span class="p-text and">and...</span> -->
-
-    <div class="skills-future">
+    <div class="skills-future atom-tab ">
       <div class="skills-text-col col-md-6">
-        <p class=" skills-text p-text">...I'll add some more to my <span class="green-text">"portfolio"</span> soon</p>
+        <p class=" skills-text p-text">...and I'll add some more to my <span class="green-text">"portfolio"</span> soon</p>
       </div>
       <div class="skills-animation-col col-md-6">
         <div class="skills-animation">
@@ -140,33 +132,55 @@
     </div>
   </section>
   <!-- Skills End -->
-  <hr>
+
   <!-- My Work -->
-  <section id="mywork" class="mywork lg-page-center">
+  <section id="mywork" class="mywork lg-page-center atom-tab  d-flex">
     <p class="mywork-text p-text">Check out some examples of .<span class="orange-text">mywork</span></p>
 
-    <div class="vertical-container-center">
-      <div class="work-container d-flex">
+      <div class="mywork-container d-flex">
         <!-- Imgage one -->
         <div class="mywork-col col-12 col-md-6">
             <a href="#mywork" class="mywork-link">
               <img src="images\blog-img.jpg" alt="">
+              <div class="purple-mask">
+                <span class="h5">Blog</span>
+              </div>
             </a>
         </div>
         <!-- Image two -->
         <div class="mywork-col col-12 col-md-6">
             <a href="#mywork" class="mywork-link">
               <img src="images\app-img.png" alt="">
+              <div class="purple-mask">
+                <span class="h5">App</span>
+              </div>
             </a>
         </div>
+        <!-- Image Three -->
+        <div class="mywork-col col-12 col-md-6">
+            <a href="#mywork" class="mywork-link">
+              <img src="images\template-img.png" alt="">
+              <div class="purple-mask">
+                <span class="h5">Template</span>
+              </div>
+            </a>
+        </div>
+        <!-- Image Four -->
+        <div class="mywork-col col-12 col-md-6">
+            <a href="#mywork" class="mywork-link">
+              <img src="images\ecommerce-img.jpg" alt="">
+            </a>
+            <div class="purple-mask">
+              <span class="h5">Ecommerce</span>
+            </div>
+        </div>
       </div>
-    </div>
 
   </section>
   <!-- My Work End -->
-<hr>
+
 <!-- Contact me -->
-<section id="contactme" class="contactme lg-page-center">
+<section id="contactme" class="contactme lg-page-center atom-tab mb-3">
   <p class="contactme-text p-text mb-5">If you want to get in touch @<span class="purple-text">ContactMe!</span></p>
   <!-- Form -->
   <form class="contactme-form row pb-5 pt-5" target="_blank" method="post">
@@ -180,7 +194,7 @@
         <label class="form-label" for="email">Email</label>
       </div>
       <div class="form-outline form-white mb-3">
-        <input type="number" id="telephone" class="form-control" name="telephone"/>
+        <input type="text" id="telephone" class="form-control" name="telephone"/>
         <label class="form-label" for="telephone">Telephone</label>
       </div>
 

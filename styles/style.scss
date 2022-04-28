@@ -8,7 +8,7 @@ hr{
 }
 /*Navbar*/
 nav{
-
+  background-color: $atom-bg-dark !important;
     /*Logo*/
     .navbar-brand{
       font-weight: 500;
@@ -22,7 +22,7 @@ nav{
     }
     /*Toggler button*/
     .navbar-toggler:focus{
-      box-shadow: 0 0 5px $primary-color;
+      box-shadow: 0 0 5px $secondary-color;
     }
 
     /*Menu items*/
@@ -31,7 +31,14 @@ nav{
 
       .nav-link{
         padding:0;
-
+        &:hover .navbar-span{
+          text-shadow: 0 0 10px $secondary-color;
+          color: $light-white;
+        }
+        &:active .navbar-span{
+          text-shadow: 0 0 10px $secondary-color;
+          color: $light-white;
+        }
         .navbar-span{
           display:block;
           width: 100%;
@@ -119,7 +126,6 @@ nav{
   margin: 0 auto;
 
   .skills-learned{
-    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -136,6 +142,7 @@ nav{
     .skills-animation-col{
       height: 50%;
       width: 100%;
+      padding: 20vh 0;
       .skills-animation{
         position: relative;
         width: 70%;
@@ -189,7 +196,6 @@ nav{
   }
 
   .skills-future{
-    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -198,6 +204,8 @@ nav{
     .skills-text{
       width: 100%;
       margin: 0 auto;
+      margin-top: 4rem;
+
 
     }
     .skills-text::after{
@@ -208,6 +216,7 @@ nav{
     .skills-animation-col{
       height: 50%;
       width: 100%;
+      padding: 20vh 0;
       .skills-animation{
         position: relative;
         width: 70%;
@@ -261,6 +270,7 @@ nav{
 
 /*My work*/
 .mywork{
+  flex-direction: column;
   width: 80%;
   margin: 0 auto;
   padding-top:3rem;
@@ -270,38 +280,60 @@ nav{
     width: 100%;
     text-align: center;
     margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
-  .vertical-container-center{
+  .mywork-container{
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    .mywork-col{
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      height: 20vh;
+      min-height: 200px;
+      position: relative;
+      overflow:hidden;
+      &:hover .purple-mask{
+        opacity: 0;
+      }
+      &:active .purple-mask{
+        opacity: 0;
+      }
 
-    .work-container{
-      padding: 4rem 0;
-      flex-wrap: wrap;
-      width: 80%;
-      margin: 0 auto;
-      .mywork-col{
-        height: 30vh;
-        max-height: 80vw;
-        padding: 2rem;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity:0.7;
+        border: 1px solid rgba(255,255,255,0.2);
 
 
-        img{
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          border-radius:1rem;
-          opacity:0.7;
-          transition: .2s ease-in-out;
-          filter: hue-rotate(60deg);
-          &:hover{
-            opacity: 1;
-          }
+      }
+
+      .purple-mask{
+        position: absolute;
+        top: 1rem;
+        bottom: 1rem;
+        left: 0;
+        right: 0;
+        background-color: $atom-bg-dark;
+        border: 1px solid rgba(255,255,255,0.2);
+        transition: .4s ease-in-out;
+        span{
+          position: absolute;
+          left: 50%;
+          top:50%;
+          transform: translate(-50%,-50%);
+          font-weight: 400;
+          color: $light-white;
         }
 
+      }
 
-        }
 
-    }
+      }
+
   }
 
 }
@@ -320,11 +352,15 @@ nav{
     flex-wrap: wrap;
     justify-content: center;
     .form-control:focus{
-      background-color: transparent;
+
     }
     .btn{
       color: $secondary-color;
       border-color: $secondary-color;
+      &:hover{
+        box-shadow: 0 0 10px $secondary-color;
+        border-color: $light-white;
+      }
     }
   }
   .follow{
@@ -342,6 +378,9 @@ nav{
       }
       &:hover{
         color: $light-white;
+      }
+      &:hover i{
+        text-shadow: 0 0 10px $secondary-color;
       }
     }
   }

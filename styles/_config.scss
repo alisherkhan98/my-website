@@ -18,17 +18,26 @@
 }
 body{
   letter-spacing: 1px;
-  font-size: 16px;
+  font-size: 12px;
   font-family: Roboto Mono;
   font-weight: 400;
   color: $light-white;
-  background-color: $atom-bg;
+  background-color: $atom-bg-dark;
   .body-bg{
     position: fixed;
     z-index: -9999;
     height: 100vh;
     object-fit: cover;
     opacity: 0.02;
+  }
+  .atom-tab{
+    background-color: $atom-bg;
+    border: 1px solid rgba(255,255,255,0.2);
+    padding:2rem;
+    margin-top:2rem;
+  }
+  .p-text{
+    color: #acb0b9;
   }
 
 
@@ -50,9 +59,14 @@ body{
   }
 
 
+
 }
 
-
+@media only screen and (min-width: 768px){
+  body{
+    font-size: 14px;
+  }
+}
 .carousel-item {
   transition: transform  0.6s ease-in-out;
 }
