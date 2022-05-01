@@ -21,7 +21,7 @@
       margin:0;
 
     .nav-link{
-      
+
 
       .navbar-span{
         padding-left:1rem;
@@ -103,12 +103,14 @@
   .mywork-container{
     .mywork-col{
       padding: 2rem;
-      .purple-mask{
-        position: absolute;
-        top: 2rem;
-        bottom: 2rem;
-        left: 2rem;
-        right: 2rem;
+      a{
+        .my-mask{
+          position: absolute;
+          top: 2rem;
+          bottom: 2rem;
+          left: 2rem;
+          right: 2rem;
+        }
       }
     }
   }
