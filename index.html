@@ -5,21 +5,12 @@
     <title>My website</title>
     <meta name="viewport" content="width=device-width initial, initial-scale=1.0, maximum-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="node_modules\mdb-ui-kit\css\mdb.min.css"> -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css"
-      rel="stylesheet"
-    />
-    <link
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-  rel="stylesheet"
-/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="styles\style.css">
-    <!-- <script src="https://kit.fontawesome.com/49aa9e056c.js" crossorigin="anonymous"></script> -->
-
   </head>
+
   <body>
-  <!-- <img src="images\circuit-board_1920.png" alt="" class='body-bg'> -->
 
   <!--Navbar-->
   <nav class='navbar navbar-expand-md navbar-dark fixed-top'>
@@ -36,10 +27,10 @@
       <!--Menu items-->
       <div class="collapse navbar-collapse" id='navmenu'>
         <ul class='navbar-nav ms-auto mb-2 mb-md-0'>
-          <li class="nav-item" ><a class='nav-link' href="#aboutme" ><span class='navbar-span' data-bs-toggle='collapse' data-bs-target='.navbar-collapse.show'>About me</span></a></li>
-          <li class="nav-item" ><a class='nav-link' href="#skills"><span class='navbar-span' data-bs-toggle='collapse' data-bs-target='.navbar-collapse.show'>Skills</span></a></li>
-          <li class="nav-item" ><a class='nav-link' href="#mywork"><span class='navbar-span' data-bs-toggle='collapse' data-bs-target='.navbar-collapse.show'>My work</span></a></li>
-          <li class="nav-item" ><a class='nav-link' href="#contactme"><span class='navbar-span last-span' data-bs-toggle='collapse' data-bs-target='.navbar-collapse.show'>Contact me</span></a></li>
+          <li class="nav-item" ><a class='nav-link' href="#aboutme" ><span class='navbar-span'  data-mdb-toggle='collapse'  data-mdb-target='.navbar-collapse.show'>About me</span></a></li>
+          <li class="nav-item" ><a class='nav-link' href="#skills"><span class='navbar-span'  data-mdb-toggle='collapse'  data-mdb-target='.navbar-collapse.show'>Skills</span></a></li>
+          <li class="nav-item" ><a class='nav-link' href="#mywork"><span class='navbar-span'  data-mdb-toggle='collapse'  data-mdb-target='.navbar-collapse.show'>My work</span></a></li>
+          <li class="nav-item" ><a class='nav-link' href="#contactme"><span class='navbar-span last-span'  data-mdb-toggle='collapse'  data-mdb-target='.navbar-collapse.show'>Contact me</span></a></li>
         </ul>
       </div>
     </div>
@@ -47,7 +38,7 @@
   <!--Nav end-->
 
   <!--Carousel-->
-  <header id="aboutme" class="aboutme carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval='2000' data-bs-pause='false'>
+  <header id="aboutme" class="aboutme carousel slide carousel-fade"  data-mdb-ride="carousel"  data-mdb-interval='2000'  data-mdb-pause='false'>
       <img src="images\keyboard.jpg" alt="" class="carousel-bg">
     <!-- slides -->
     <div class="carousel-inner lg-page-center">
@@ -97,7 +88,7 @@
   <!-- Carousel End -->
 
   <!--Skills-->
-  <section id='skills' class="skills lg-page-center">
+  <section id='skills' class="skills page-center">
     <div class="skills-learned atom-tab ">
       <div class="skills-text-col col-md-6">
         <p class=" skills-text p-text">My journey in web developing just recently
@@ -148,13 +139,13 @@
   <!-- Skills End -->
 
   <!-- My Work -->
-  <section id="mywork" class="mywork lg-page-center atom-tab  d-flex">
+  <section id="mywork" class="mywork page-center atom-tab  d-flex">
     <p class="mywork-text p-text">Check out some examples of .<span class="orange-text">mywork</span></p>
 
       <div class="mywork-container d-flex">
         <!-- Imgage one -->
         <div class="mywork-col col-12 col-md-6">
-            <a href="#mywork" class="mywork-link">
+            <a href="#" target="_blank" class="mywork-link">
               <img src="images\blog-img.jpg" alt="">
               <div class="my-mask">
                 <span class="h5">Blog</span>
@@ -163,7 +154,7 @@
         </div>
         <!-- Image two -->
         <div class="mywork-col col-12 col-md-6">
-            <a href="#mywork" class="mywork-link">
+            <a href="#" target="_blank" class="mywork-link">
               <img src="images\app-img.png" alt="">
               <div class="my-mask">
                 <span class="h5">App</span>
@@ -172,7 +163,7 @@
         </div>
         <!-- Image Three -->
         <div class="mywork-col col-12 col-md-6">
-            <a href="#mywork" class="mywork-link">
+            <a href="#" target="_blank" class="mywork-link">
               <img src="images\template-img.png" alt="">
               <div class="my-mask">
                 <span class="h5">Template</span>
@@ -181,7 +172,7 @@
         </div>
         <!-- Image Four -->
         <div class="mywork-col col-12 col-md-6">
-            <a href="#mywork" class="mywork-link">
+            <a href="#" target="_blank" class="mywork-link">
               <img src="images\ecommerce-img.jpg" alt="">
               <div class="my-mask">
                 <span class="h5">Ecommerce</span>
@@ -194,7 +185,7 @@
   <!-- My Work End -->
 
 <!-- Contact me -->
-<section id="contactme" class="contactme lg-page-center atom-tab mb-3">
+<section id="contactme" class="contactme page-center atom-tab mb-3">
   <p class="contactme-text p-text mb-5">If you want to get in touch @<span class="purple-text">ContactMe!</span></p>
   <!-- Form -->
   <form class="contactme-form row pb-5 pt-5" target="_blank" method="post">
@@ -222,18 +213,18 @@
     </div>
 
 
-    <input type="submit" class="btn btn-outline-light w-50" value="Send">
+    <input type="submit" class="btn btn-outline-light btn-neon w-50" value="Send">
 
   </form>
 
   <p class="p-text follow mt-5">Follow me on my socials</p>
 
   <footer class="mobile-footer">
-    <div class="socials d-flex">
-      <a href="https://www.instagram.com/" class="mb-5 mt-3 p-2"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://github.com/" class="mb-5 mt-3 p-2"><i class="fa-brands fa-github"></i></a>
-      <a href="https://it.linkedin.com/" class="mb-5 mt-3 p-2"><i class="fa-brands fa-linkedin-in"></i></a>
-      <a href="https://www.tiktok.com/" class="mb-5 mt-3 p-2"><i class="fa-brands fa-tiktok"></i></a>
+    <div class="socials mb-4 mt-4 d-flex">
+      <a href="https://www.instagram.com/" class="p-2"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://github.com/" class="p-2"><i class="fa-brands fa-github"></i></a>
+      <a href="https://it.linkedin.com/" class="p-2"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.tiktok.com/" class="p-2"><i class="fa-brands fa-tiktok"></i></a>
     </div>
   </footer>
 
@@ -241,13 +232,13 @@
 <!-- Contact me End -->
 
 <!-- newsletter -->
-<section class="newsletter atom-tab lg-page-center ">
+<section class="newsletter atom-tab page-center ">
   <form action="" target="_self">
     <!--Grid row-->
-    <div class="row d-flex mt-3 justify-content-center">
+    <div class="row d-flex mt-4 justify-content-center">
       <!--Grid column-->
       <div class="col-auto">
-        <p class="p-text pt-2 mb-3">
+        <p class="p-text pt-2 mb-4">
           <strong>Sign up for our newsletter</strong>
         </p>
       </div>
@@ -256,7 +247,7 @@
       <!--Grid column-->
       <div class="col-md-5 col-12">
         <!-- Email input -->
-        <div class="form-outline form-white mb-3">
+        <div class="form-outline form-white mb-4">
           <input type="email" id="form5Example21" class="form-control" />
           <label class="form-label" for="form5Example21">Email address</label>
         </div>
@@ -264,9 +255,9 @@
       <!--Grid column-->
 
       <!--Grid column-->
-      <div class="col-auto">
+      <div class="col-auto mb-4">
         <!-- Submit button -->
-        <button type="submit" class="btn btn-outline-light">
+        <button type="submit" class="btn btn-outline-light btn-neon">
           Subscribe
         </button>
       </div>
@@ -278,7 +269,7 @@
 
   <!-- Desktop Footer -->
 <div class="desktop-footer">
-  <div class="p-text text-center p-3 mt-5" style="background-color: rgba(0, 0, 0, 0.2);">
+  <div class="footer-text p-text text-center p-3 mt-5">
     © 2020 Copyright:
     <a class="p-text" href="#">alisherkhan.com</a>
   </div>
@@ -298,12 +289,7 @@
 
 
 
-  <script type="text/javascript" src='node_modules\bootstrap\dist\js\bootstrap.bundle.js'></script>
-  <script type="text/javascript" src="node_modules\mdb-ui-kit\js\mdb.min.js"></script>
-  <script
-  type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"
-></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"></script>
 
   </body>
 </html>

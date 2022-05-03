@@ -1,11 +1,5 @@
 /*Nav bar settings*/
 /*Forms*/
-:root {
-		--bs-primary-rgb: 0, 136, 204;
-		--bs-secondary-rgb: 102, 47, 143;
-		--bs-dark-rgb: 33, 36, 43;
-}
-
 * {
 		padding: 0;
 		margin: 0;
@@ -22,12 +16,13 @@
 
 body {
 		letter-spacing: 1px;
-		font-size: 12px;
+		font-size: 13px;
 		font-family: Roboto Mono;
 		font-weight: 400;
 		color: #f7f7f7;
 		background-color: #21242b;
 		/*Typography*/
+		/*Buttons*/
 }
 
 body .body-bg {
@@ -43,6 +38,12 @@ body .atom-tab {
 		border: 1px solid rgba(255, 255, 255, 0.2);
 		padding: 2rem;
 		margin-top: 2rem;
+}
+
+body .page-center {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
 }
 
 body .p-text {
@@ -69,12 +70,36 @@ body .purple-text {
 		color: #c375ff;
 }
 
+body .btn-neon {
+		box-shadow: 0 0 10px #c375ff;
+}
+
 @media only screen and (min-width: 768px) {
 		body {
 				font-size: 14px;
 		}
+		body .page-center {
+				width: 80%;
+		}
 }
 
+@media only screen and (min-width: 992px) {
+		body .btn-neon {
+				box-shadow: 0 0;
+		}
+		body .btn-neon:hover {
+				box-shadow: 0 0 10px #c375ff;
+				border-color: #f7f7f7;
+		}
+}
+
+@media only screen and (min-width: 1200px) {
+		body .page-center {
+				width: 960px;
+		}
+}
+
+/*carousel-fade issue*/
 .carousel-item {
 		transition: transform  0.6s ease-in-out;
 }
@@ -242,8 +267,6 @@ nav .nav-item .nav-link .navbar-span {
 		display: flex;
 		flex-direction: column;
 		position: relative;
-		width: 80%;
-		margin: 0 auto;
 }
 
 .skills .skills-learned {
@@ -400,8 +423,6 @@ nav .nav-item .nav-link .navbar-span {
 /*My work*/
 .mywork {
 		flex-direction: column;
-		width: 80%;
-		margin: 0 auto;
 		padding-top: 3rem;
 		position: relative;
 }
@@ -453,7 +474,7 @@ nav .nav-item .nav-link .navbar-span {
 		top: 50%;
 		transform: translate(-50%, -50%);
 		font-weight: 400;
-		color: #f7f7f7;
+		color: #babdc4;
 }
 
 .mywork .mywork-container .mywork-col a:hover .my-mask {
@@ -467,8 +488,6 @@ nav .nav-item .nav-link .navbar-span {
 /*My work End*/
 /*Contact me*/
 .contactme {
-		width: 80%;
-		margin: 0 auto;
 		padding-top: 3rem;
 }
 
@@ -487,19 +506,14 @@ nav .nav-item .nav-link .navbar-span {
 		max-width: 120px;
 }
 
-.contactme .contactme-form .btn:hover {
-		box-shadow: 0 0 10px #c375ff;
-		border-color: #f7f7f7;
-}
-
 .contactme .follow {
 		text-align: center;
 }
 
 .contactme .socials {
-		font-size: 1rem;
 		width: 80%;
 		margin: 0 auto;
+		font-size: 1rem;
 		justify-content: space-evenly;
 }
 
@@ -516,23 +530,16 @@ nav .nav-item .nav-link .navbar-span {
 }
 
 /*Desktop footer*/
-.newsletter {
-		color: #acb0b9;
-		width: 80%;
-		margin: 0 auto;
-}
-
-.newsletter .btn {
-		max-width: 120px;
-}
-
-.newsletter .btn:hover {
-		box-shadow: 0 0 10px #c375ff;
-		border-color: #f7f7f7;
-}
-
 .desktop-footer {
-		z-index: 3;
+		position: relative;
+}
+
+.desktop-footer .footer-text {
+		position: absolute;
+		left: 0;
+		right: 0;
+		z-index: 2;
+		background-color: #16181d;
 }
 
 .socials-md-fixed {

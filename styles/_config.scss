@@ -1,8 +1,4 @@
-:root{
-  --bs-primary-rgb: 0, 136, 204;
-  --bs-secondary-rgb: 102, 47, 143;
-  	--bs-dark-rgb: 33, 36, 43;
-}
+
 
 *{
   padding: 0;
@@ -18,7 +14,7 @@
 }
 body{
   letter-spacing: 1px;
-  font-size: 12px;
+  font-size: 13px;
   font-family: Roboto Mono;
   font-weight: 400;
   color: $light-white;
@@ -35,6 +31,11 @@ body{
     border: 1px solid rgba(255,255,255,0.2);
     padding:2rem;
     margin-top:2rem;
+  }
+  .page-center{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .p-text{
     color: $atom-text;
@@ -58,6 +59,10 @@ body{
     color: $atom-purple;
   }
 
+  /*Buttons*/
+  .btn-neon{
+    box-shadow: 0 0 10px $secondary-color;
+  }
 
 
 }
@@ -65,8 +70,34 @@ body{
 @media only screen and (min-width: 768px){
   body{
     font-size: 14px;
+    .page-center{
+      width: 80%;
+    }
+
   }
 }
+
+@media only screen and (min-width: 992px){
+  body{
+    .btn-neon{
+      box-shadow: 0 0;
+      &:hover{
+        box-shadow: 0 0 10px $secondary-color;
+        border-color: $light-white;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  body{
+    .page-center{
+      width:960px;
+    }
+  }
+}
+
+/*carousel-fade issue*/
 .carousel-item {
   transition: transform  0.6s ease-in-out;
 }
