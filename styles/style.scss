@@ -376,8 +376,13 @@ nav{
   .contactme-form{
     flex-wrap: wrap;
     justify-content: center;
-    .form-control:focus{
-
+    .form-control{
+      ~.form-notch div{
+        border-color: $atom-text;
+      }
+    }
+    .form-label{
+      color: $atom-text
     }
     .btn{
       max-width: 120px;
@@ -387,7 +392,7 @@ nav{
     text-align: center;
   }
   .socials{
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
     font-size: 1rem;
     justify-content: space-evenly;
@@ -409,7 +414,19 @@ nav{
 
 /*Desktop footer*/
   .newsletter{
+    form{
+      .row{
+        .form-control{
+          ~.form-notch div{
+            border-color: $atom-text;
+          }
+        }
+        .form-label{
+          color: red;
+        }
+      }
 
+    }
   }
 
   .desktop-footer{
