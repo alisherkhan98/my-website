@@ -13,6 +13,7 @@ nav{
     .navbar-brand{
       font-weight: 500;
       font-size:1em;
+      background: linear-gradient(0deg, $secondary-color, $primary-color);
       background: -webkit-linear-gradient(0deg, $secondary-color, $primary-color);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
