@@ -17,6 +17,7 @@ nav{
       background: -webkit-linear-gradient(0deg, $secondary-color, $primary-color);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      background-clip: text;
       margin:0 auto;
       position: relative;
       left:25px;
@@ -52,7 +53,14 @@ nav{
 
 }
 /*Navbar End*/
+#carouselBasicExample{
+  height: 100vh;
+  img{
+    height: 100vh;
+    object-fit: cover;
 
+  }
+}
 /*Carousel*/
 
 .aboutme{
@@ -85,7 +93,7 @@ nav{
         transition: .5s ease-in-out;
         z-index: 10;
         &:hover{
-          transform: translate(-52%,0);
+          transform: translate(-55%,0);
         }
         &:hover ~.img-mask{
           transform: translate(-45%,0);
@@ -95,7 +103,7 @@ nav{
         position: absolute;
         height: 100%;
         left:50%;
-        transform: translate(-47%,0);
+        transform: translate(-50%,0);
         mask-image:url(../images/carousel-img.png);
         -webkit-mask-image:url(../images/carousel-img.png);
         mask-size:contain;
@@ -126,7 +134,7 @@ nav{
       justify-content: center;
       align-items: center;
       position: absolute;
-      top:40px;
+      top:0px;
       left:0;
       right:0;
       bottom:0;
@@ -142,6 +150,7 @@ nav{
     }
 
   }
+
 }
 /*Carousel End*/
 
@@ -185,7 +194,7 @@ nav{
             text-shadow: 0 0 10px $secondary-color;
         }
 
-        .node{
+        .sass{
           animation-delay: 1s;
         }
         .mdb{

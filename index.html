@@ -37,9 +37,18 @@
   </nav>
   <!--Nav end-->
 
+
   <!--Carousel-->
-  <header id="aboutme" class="aboutme carousel slide carousel-fade"  data-mdb-ride="carousel"  data-mdb-interval='2000'  data-mdb-pause='false'>
-      <img src="images\keyboard.jpg" alt="" class="carousel-bg">
+  <header id="aboutme" class="aboutme carousel slide carousel-fade"  data-mdb-ride="carousel"  data-mdb-interval='3000'>
+    <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-mdb-target="#aboutme" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" ></button>
+        <button type="button" data-mdb-target="#aboutme" data-mdb-slide-to="1" aria-label="Slide 2" ></button>
+        <button type="button" data-mdb-target="#aboutme" data-mdb-slide-to="2" aria-label="Slide 3" ></button>
+        <button type="button" data-mdb-target="#aboutme" data-mdb-slide-to="3" aria-label="Slide 3" ></button>
+      </div>
+    <!-- background image   -->
+    <img src="images\keyboard.jpg" alt="" class="carousel-bg">
     <!-- slides -->
     <div class="carousel-inner lg-page-center">
       <div class="img-col">
@@ -81,6 +90,17 @@
         </div>
 
       </div>
+      <!-- Fourth slide -->
+      <div class="carousel-item fourth-slide">
+        <div class="carousel-text-col">
+          <div class="carousel-text">
+            <h1 class='display-4'>Read my <span class="orange-text">.CV</span></h1>
+            <a href="/documents/resume.pdf" download class=" btn btn-outline-light btn-neon mt-4">Download here</a>
+          </div>
+        </div>
+
+      </div>
+
 
     </div>
 
@@ -101,7 +121,7 @@
             <span class="css">CSS</span>
           </div>
           <div class="animation-line2 ">
-            <span class="node">Node.js</span>
+            <span class="sass">Sass</span>
             <span class="npm">npm</span>
             <span class="git">git</span>
           </div>
@@ -248,8 +268,8 @@
       <div class="col-md-5 col-12">
         <!-- Email input -->
         <div class="form-outline form-white mb-4">
-          <input type="email" id="subscription" class="form-control" name="email" />
-          <label class="form-label" for="subscription">Email address</label>
+          <input type="email" id="form5Example21" class="form-control" />
+          <label class="form-label" for="form5Example21">Email address</label>
         </div>
       </div>
       <!--Grid column-->
@@ -257,9 +277,7 @@
       <!--Grid column-->
       <div class="col-auto mb-4">
         <!-- Submit button -->
-        <button type="submit" class="btn btn-outline-light btn-neon">
-          Subscribe
-        </button>
+        <button type="submit" class="btn btn-outline-light btn-neon">Subscribe</button>
       </div>
       <!--Grid column-->
     </div>
@@ -275,16 +293,17 @@
   </div>
 </div>
 
-<!-- Fixed socials bar -->
+
 <section class="socials-md-fixed">
   <a href="https://www.instagram.com/" class="p-2"><i class="fa-brands fa-instagram"></i></a>
   <a href="https://github.com/" class="p-2"><i class="fa-brands fa-github"></i></a>
   <a href="https://it.linkedin.com/" class="p-2"><i class="fa-brands fa-linkedin-in"></i></a>
-  <a href="https://www.tiktok.com/" class="p-2 mb-2"><i class="fa-brands fa-tiktok"></i></a>
+  <a href="https://www.tiktok.com/" class="p-2"><i class="fa-brands fa-tiktok"></i></a>
   <div class="line">
 
   </div>
 </section>
+
 
 
 
