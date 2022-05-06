@@ -1,13 +1,29 @@
 @import 'myvariables';
 @import 'config';
 
-hr{
-  width: 90%;
-  margin-left: auto;
-  display: none;
+/*Intro*/
+.intro{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: $atom-bg-dark;
+  z-index: 99;
+  animation: intro-opacity 1s ease-in-out 4s both reverse;
+  .intro-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 500px;
+    animation: intro-opacity .5s ease-in-out 3s both reverse;
+
+  }
 }
+
+
 /*Navbar*/
 nav{
+  animation: intro-opacity 1s ease-in-out 5s both;
   background-color: $atom-bg-dark !important;
     /*Logo*/
     .navbar-brand{
@@ -453,7 +469,7 @@ nav{
 
 .socials-md-fixed{
   display: none;
-  z-index: 1;
+  animation: intro-opacity 1s ease-in-out 5s both;
 }
 
 @keyframes cursor {
@@ -468,6 +484,11 @@ nav{
 7%{opacity: 1;}
 14%{opacity: 0;}
 100%{opacity: 0;}
+}
+
+@keyframes intro-opacity{
+  from{opacity: 0; z-index: -1}
+  to{opacity: 1;}
 }
 
 
